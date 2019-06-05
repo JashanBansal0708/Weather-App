@@ -1,3 +1,6 @@
+body{
+    max-height: 100vh;
+}
 @media screen and (min-width:768px){
     *{
         margin: 0;
@@ -9,7 +12,7 @@
         opacity: 0;
     }
     
-    body{
+    .container2{
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -69,7 +72,7 @@
     }
 
     
-    body{
+    .container2{
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -127,4 +130,36 @@
         font-weight: bold;
         font-size: 1.5rem;
     }
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.container2{
+    transition: all 0.8s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: translatey(3rem);
+}
+ 
+.container2-show{
+    visibility: visible;
+    opacity: 1;
+    transform: translatey(0rem);  
 }

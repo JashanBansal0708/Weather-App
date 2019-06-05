@@ -1,4 +1,9 @@
 window.addEventListener("load", (result) => {
+    setTimeout(() => {
+        document.querySelector(".container1").style.display = "none";
+        document.querySelector(".container2").classList.add("container2-show")    
+    }, 2000)
+
     let long;
     let lat;
 
